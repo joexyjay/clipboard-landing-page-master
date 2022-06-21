@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    line-height: 1.5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 50px;
+}
+button{
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    width: 100%;
+}
+.ios{
+    background-color: hsl(171, 66%, 44%);
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px hsl(171, 66%, 44%);
+}
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 1px 1px 5px hsl(233, 100%, 69%);
+}
+header, .what, .access, .tools, .logos, .available{     
+    margin-bottom: 100px;
+}
+header img{
+    padding-bottom: 50px;
+}
+h1, h2, h3{
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 10px;
+}
+header p{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+p{
+    color: hsl(201, 11%, 66%);
+}
+.search, .sync, .history{
+    margin-bottom: 30px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about h2{
+    margin-bottom: 10px;
+}
+.what img{
+    margin-bottom: 50px;
+}
+.what img,  .access img{
+    width: 100%;
+}
+.blacklist, .snippet, .preview{
+    margin-bottom: 80px;
+}
+.workflow-head{
+    margin-bottom: 50px;
+}
+.workflow img, .available p{
+    margin-bottom: 30px;
+}
+.workflow h3{
+    margin-bottom: 10px;
+}
+.logos img{
+    margin-bottom: 50px;
+}
+.company{
+   background-color: #f3f3f3;
+    padding: 30px;
+    text-align: center;
+}
+.company img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.company li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.company a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%)
+}
+.socials img{
+    width: 15px;
+    margin: 15px;
+}
+@media(min-width:1000px){
+    body{
+        background-image: url(images/bg-header-desktop.png);
+        font-size: 18px;
+    }
+    .container{
+        max-width: none;
+    }
+    header{
+        margin-top: 50px;
+    }
+    .about, .access, .workflow, .available, header{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    button{
+        border-radius: 30px;
+        border: none;
+        color: white;
+        padding: 15px 50px;
+        width: auto;
+    }
+    .ios{
+        margin-right: 10px;
+    }
+    .what{
+        display: flex;
+        text-align: left;
+        
+    }
+   .what img{
+       transform: translateX(-100px);
+   }
+   .what-details{
+       margin-top: 100px;
+       margin-right: 200px;
+   }
+   .what-details h3{
+       margin-bottom: 0;
+   }
+   .search, .sync, .history{
+       margin-bottom: 50px;
+   }
+   .access img{
+       margin-top: 50px;
+   }
+   .tools{
+       display: flex;
+       gap: 20px;
+   }
+   .logos img{
+       margin-right: 50px;
+   }
+   .company{
+       display: flex;
+       justify-content: space-around;
+       text-align: left;
+       align-items: center;
+   }
+   .company img{
+       height: 50px;
+       width: 50px;
+       margin-bottom: 0;
+   }
+   .company ul{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       column-gap: 50px;
+   }
+   .company li:nth-of-type(2){
+       grid-area: 2/1/3/2;
+   }
+   .company li:nth-of-type(3){
+       grid-area: 1/2/2/3;
+   }
+   .company li:nth-of-type(5){
+       grid-area: 1/3/2/4;
+   }
+   .company a:hover{
+       color: hsl(171, 66%, 44%);
+   }
+   .socials img{
+       height: 20px;
+       width: 20px;
+   }
+    
+   
+}
+
